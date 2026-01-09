@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedOut",
+  "version": "1.0",
+  "description": "Removes Home button and redirects Feed to Profile.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["src/main.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
